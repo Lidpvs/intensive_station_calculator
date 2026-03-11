@@ -2,44 +2,71 @@
 
 A desktop medical calculator for basic fluid and electrolyte assessment in intensive care patients.
 
-This project was built with Python and CustomTkinter. It allows creating patient records, storing laboratory and clinical parameters, calculating several derived values, and saving patient history in JSON format.
+This project was built with **Python** and **CustomTkinter** as a lightweight clinical prototype for structured patient registration, laboratory input, fluid deficit estimation, and infusion planning.
+
+It combines a simple desktop GUI with patient-specific calculations and local JSON-based storage.
+
+---
 
 ## Features
 
-- Create a new patient record through a GUI
-- Save patient data locally as JSON files
-- Load all saved patients from storage
+- Register a new patient through a graphical interface
+- Store patient records locally as JSON files
+- Load previously saved patients
 - Update laboratory values
 - Update clinical parameters
-- View saved patient history
-- Calculate:
-  - Ideal Body Weight (IBW)
-  - Calculated serum osmolality
-  - Estimated water / sodium deficit
-  - Infusion target
+- View patient history
+- Recalculate clinical values after updates
+- Save daily patient snapshots with date-based history
+
+---
 
 ## Clinical calculations included
 
-### 1. Ideal Body Weight (IBW)
+### Ideal Body Weight (IBW)
 - Female: `45.5 + 0.91 × (height - 152.4)`
 - Male: `50 + 0.91 × (height - 152.4)`
 
-### 2. Calculated Osmolality
+### Calculated Osmolality
 - `2 × Na + glucose / 18 + urea / 2.8`
 
-### 3. Deficit estimation
-Depending on osmolality:
-- Hypoosmolar state → sodium deficit logic
-- Normoosmolar state → water deficit logic based on hematocrit
-- Hyperosmolar state → free water deficit logic
+### Deficit estimation logic
+Depending on calculated osmolality, the application estimates:
+- **Hypoosmolar state** → sodium deficit logic
+- **Normoosmolar state** → water deficit logic based on hematocrit
+- **Hyperosmolar state** → free water deficit logic
 
-### 4. Infusion target
-Based on:
-- IBW
-- Perspiration losses
-- Deficit
-- Diuresis
-- Water-balance target
+### Infusion target
+The daily infusion target is estimated based on:
+- ideal body weight
+- perspiration losses
+- deficit estimation
+- diuresis
+- water-balance target
+
+---
+
+## GUI overview
+
+The application includes:
+
+- **Main menu**
+  - New patient admission
+  - Existing patients on the ward
+  - Save and exit
+
+- **New admission window**
+  - demographic and diagnostic data entry
+  - laboratory and clinical parameter input
+  - real-time calculation output with interpretation and therapy suggestion
+
+- **Patient update window**
+  - add or update analyses
+  - add or update parameters
+  - open patient history
+  - run calculation for all loaded patients
+
+---
 
 ## Project structure
 
@@ -52,31 +79,31 @@ project/
 ├── requirements.txt
 ├── README.md
 └── my_patients/
-File overview
+File description
 
-main.py — GUI application built with CustomTkinter
+main.py — GUI application logic built with CustomTkinter
 
 patient.py — Patient class and medical calculation methods
 
 storage.py — loading, saving, and batch calculations
 
-my_patients/ — local JSON storage for patient records
+my_patients/ — local JSON storage for patient files
 
 How to run
 1. Clone the repository
-git clone <your-repo-link>
-cd <your-repo-folder>
+git clone <your-repository-link>
+cd <your-repository-folder>
 2. Install dependencies
 pip install -r requirements.txt
-3. Run the application
+3. Start the application
 python main.py
 Data storage
 
-Each patient is stored as a separate JSON file inside the my_patients folder.
+Each patient is stored as an individual JSON file in the my_patients folder.
 
 Stored data includes:
 
-demographic data
+demographic information
 
 diagnosis
 
@@ -86,7 +113,9 @@ clinical parameters
 
 calculated values
 
-dated history entries
+date-based history records
+
+This makes the application simple to run locally without a database.
 
 Example workflow
 
@@ -108,38 +137,78 @@ sodium, glucose, urea, hematocrit
 
 temperature and diuresis
 
-Save patient
+Save the patient
 
-Review or update patient later
+Review or update the patient later
 
-Recalculate values for loaded patients
+Recalculate values after new analysis input
 
-Notes
+Open and review saved history
 
-This project is intended for educational and portfolio purposes.
+Why this project matters
 
-It is not a certified medical device and must not be used as a sole basis for clinical decision-making.
+This project combines medical domain knowledge with Python application development.
+
+It was designed as a practical prototype for:
+
+structured patient documentation
+
+electrolyte and osmolality interpretation
+
+basic infusion planning
+
+reusable local patient storage
+
+It reflects an attempt to translate ICU-style clinical reasoning into a small but functional desktop application.
+
+Technologies used
+
+Python
+
+CustomTkinter
+
+JSON
+
+Pathlib
+
+Object-oriented programming
+
+Limitations
+
+This application is intended for educational and portfolio purposes only.
+
+It is not a certified medical device and must not be used as the sole basis for clinical decision-making.
+
+The formulas and logic implemented here represent a simplified prototype and do not replace clinical judgment, institutional protocols, or validated medical software.
 
 Future improvements
 
-Better validation of input fields
+stronger field validation
 
-More detailed electrolyte correction logic
+dropdowns instead of free-text entries for some inputs
 
-Search and filtering by diagnosis or date
+better error feedback inside the GUI
 
-Charts for trend visualization
+trends and charts for repeated measurements
 
-Extended patient history viewer
+search and filtering by diagnosis or date
 
-Export to CSV or PDF
+export to CSV or PDF
 
-Improved error handling
+packaging as a standalone desktop app
 
-Packaging as standalone desktop app
+improved layout and UI styling
 
+Screenshots
+
+You can add screenshots here after uploading them to the repository, for example:
+
+![Main Menu](screenshots/menu.png)
+![New Admission](screenshots/registration.png)
+![Patient Update](screenshots/update.png)
+![Patient History](screenshots/history.png)
 Author
 
 Lidiia Petrovska
 
-Python / medical logic / desktop application project
+Medical logic + Python desktop application project
