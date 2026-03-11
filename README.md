@@ -73,15 +73,20 @@ The application includes:
 
 project/
 │
+
 ├── main.py
+
 ├── patient.py
+
 ├── storage.py
+
 ├── requirements.txt
+
 ├── README.md
+
 └── my_patients/
 
----
-File description
+# File description
 
 main.py — GUI application logic built with CustomTkinter
 
@@ -90,8 +95,8 @@ patient.py — Patient class and medical calculation methods
 storage.py — loading, saving, and batch calculations
 
 my_patients/ — local JSON storage for patient files
----
-How to run
+
+# How to run
 1. Clone the repository
 git clone <your-repository-link>
 cd <your-repository-folder>
@@ -117,17 +122,15 @@ Stored data includes:
 
 -date-based history records
 
-
 This makes the application simple to run locally without a database.
 
----
 Example workflow
 
--Open the application
+Open the application
 
--Create a new patient
+Create a new patient
 
--Enter:
+Enter:
 
 sex
 
@@ -141,17 +144,15 @@ sodium, glucose, urea, hematocrit
 
 temperature and diuresis
 
--Save the patient
+Save the patient
 
--Review or update the patient later
+Review or update the patient later
 
--Recalculate values after new analysis input
+Recalculate values after new analysis input
 
--Open and review saved history
+Open and review saved history
 
----
-
-Why this project matters
+# Why this project matters
 
 This project combines medical domain knowledge with Python application development.
 
@@ -169,19 +170,17 @@ It reflects an attempt to translate ICU-style clinical reasoning into a small bu
 
 Technologies used
 
--Python
+Python
 
--CustomTkinter
+CustomTkinter
 
--JSON
+JSON
 
--Pathlib
+Pathlib
 
--Object-oriented programming
+Object-oriented programming
 
----
-
-Limitations
+# Limitations
 
 This application is intended for educational and portfolio purposes only.
 
@@ -189,32 +188,27 @@ It is not a certified medical device and must not be used as the sole basis for 
 
 The formulas and logic implemented here represent a simplified prototype and do not replace clinical judgment, institutional protocols, or validated medical software.
 
----
+# Future improvements
 
-Future improvements
+stronger field validation
 
--stronger field validation
+dropdowns instead of free-text entries for some inputs
 
--dropdowns instead of free-text entries for some inputs
+better error feedback inside the GUI
 
--better error feedback inside the GUI
+trends and charts for repeated measurements
 
--trends and charts for repeated measurements
+search and filtering by diagnosis or date
 
--search and filtering by diagnosis or date
+export to CSV or PDF
 
--export to CSV or PDF
+packaging as a standalone desktop app
 
--packaging as a standalone desktop app
+improved layout and UI styling
 
--improved layout and UI styling
-
----
-
-Screenshots
+# Screenshots
 
 You can add screenshots here after uploading them to the repository, for example:
-
 ![Main Menu](screenshots/menu.png)
 ![New Admission](screenshots/registration.png)
 ![Patient Update](screenshots/update.png)
@@ -222,7 +216,7 @@ You can add screenshots here after uploading them to the repository, for example
 
 ---
 
-Author
+# Author
 
 Lidiia Petrovska
 
