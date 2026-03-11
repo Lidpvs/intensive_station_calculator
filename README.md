@@ -70,7 +70,7 @@ The application includes:
 
 ## Project structure
 
-```text
+
 project/
 │
 ├── main.py
@@ -117,8 +117,8 @@ Stored data includes:
 
 -date-based history records
 
-T
-his makes the application simple to run locally without a database.
+
+This makes the application simple to run locally without a database.
 
 ---
 Example workflow
