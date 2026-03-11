@@ -72,6 +72,7 @@ The application includes:
 
 
 project/
+
 │
 
 ├── main.py
@@ -108,7 +109,7 @@ Data storage
 
 Each patient is stored as an individual JSON file in the my_patients folder.
 
-Stored data includes:
+# Stored data includes:
 
 -demographic information
 
@@ -124,13 +125,13 @@ Stored data includes:
 
 This makes the application simple to run locally without a database.
 
-Example workflow
+# Example workflow
 
-Open the application
+-Open the application
 
-Create a new patient
+-Create a new patient
 
-Enter:
+-Enter:
 
 sex
 
@@ -144,13 +145,13 @@ sodium, glucose, urea, hematocrit
 
 temperature and diuresis
 
-Save the patient
+-Save the patient
 
-Review or update the patient later
+-Review or update the patient later
 
-Recalculate values after new analysis input
+-Recalculate values after new analysis input
 
-Open and review saved history
+-Open and review saved history
 
 # Why this project matters
 
@@ -168,7 +169,7 @@ It was designed as a practical prototype for:
 
 It reflects an attempt to translate ICU-style clinical reasoning into a small but functional desktop application.
 
-Technologies used
+# Technologies used
 
 Python
 
