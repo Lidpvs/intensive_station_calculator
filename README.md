@@ -79,6 +79,8 @@ project/
 ├── requirements.txt
 ├── README.md
 └── my_patients/
+
+---
 File description
 
 main.py — GUI application logic built with CustomTkinter
@@ -88,7 +90,7 @@ patient.py — Patient class and medical calculation methods
 storage.py — loading, saving, and batch calculations
 
 my_patients/ — local JSON storage for patient files
-
+---
 How to run
 1. Clone the repository
 git clone <your-repository-link>
@@ -103,27 +105,29 @@ Each patient is stored as an individual JSON file in the my_patients folder.
 
 Stored data includes:
 
-demographic information
+-demographic information
 
-diagnosis
+-diagnosis
 
-laboratory values
+-laboratory values
 
-clinical parameters
+-clinical parameters
 
-calculated values
+-calculated values
 
-date-based history records
+-date-based history records
 
-This makes the application simple to run locally without a database.
+T
+his makes the application simple to run locally without a database.
 
+---
 Example workflow
 
-Open the application
+-Open the application
 
-Create a new patient
+-Create a new patient
 
-Enter:
+-Enter:
 
 sex
 
@@ -137,13 +141,15 @@ sodium, glucose, urea, hematocrit
 
 temperature and diuresis
 
-Save the patient
+-Save the patient
 
-Review or update the patient later
+-Review or update the patient later
 
-Recalculate values after new analysis input
+-Recalculate values after new analysis input
 
-Open and review saved history
+-Open and review saved history
+
+---
 
 Why this project matters
 
@@ -151,27 +157,29 @@ This project combines medical domain knowledge with Python application developme
 
 It was designed as a practical prototype for:
 
-structured patient documentation
+-structured patient documentation
 
-electrolyte and osmolality interpretation
+-electrolyte and osmolality interpretation
 
-basic infusion planning
+-basic infusion planning
 
-reusable local patient storage
+-reusable local patient storage
 
 It reflects an attempt to translate ICU-style clinical reasoning into a small but functional desktop application.
 
 Technologies used
 
-Python
+-Python
 
-CustomTkinter
+-CustomTkinter
 
-JSON
+-JSON
 
-Pathlib
+-Pathlib
 
-Object-oriented programming
+-Object-oriented programming
+
+---
 
 Limitations
 
@@ -181,23 +189,27 @@ It is not a certified medical device and must not be used as the sole basis for 
 
 The formulas and logic implemented here represent a simplified prototype and do not replace clinical judgment, institutional protocols, or validated medical software.
 
+---
+
 Future improvements
 
-stronger field validation
+-stronger field validation
 
-dropdowns instead of free-text entries for some inputs
+-dropdowns instead of free-text entries for some inputs
 
-better error feedback inside the GUI
+-better error feedback inside the GUI
 
-trends and charts for repeated measurements
+-trends and charts for repeated measurements
 
-search and filtering by diagnosis or date
+-search and filtering by diagnosis or date
 
-export to CSV or PDF
+-export to CSV or PDF
 
-packaging as a standalone desktop app
+-packaging as a standalone desktop app
 
-improved layout and UI styling
+-improved layout and UI styling
+
+---
 
 Screenshots
 
@@ -207,6 +219,9 @@ You can add screenshots here after uploading them to the repository, for example
 ![New Admission](screenshots/registration.png)
 ![Patient Update](screenshots/update.png)
 ![Patient History](screenshots/history.png)
+
+---
+
 Author
 
 Lidiia Petrovska
