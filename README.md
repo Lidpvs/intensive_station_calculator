@@ -87,17 +87,17 @@ project/
 
 └── my_patients/
 
-# File description
+## File description
 
-main.py — GUI application logic built with CustomTkinter
+-main.py — GUI application logic built with CustomTkinter
 
-patient.py — Patient class and medical calculation methods
+-patient.py — Patient class and medical calculation methods
 
-storage.py — loading, saving, and batch calculations
+-storage.py — loading, saving, and batch calculations
 
-my_patients/ — local JSON storage for patient files
+-my_patients/ — local JSON storage for patient files
 
-# How to run
+## How to run
 1. Clone the repository
 git clone <your-repository-link>
 cd <your-repository-folder>
@@ -109,7 +109,7 @@ Data storage
 
 Each patient is stored as an individual JSON file in the my_patients folder.
 
-# Stored data includes:
+## Stored data includes:
 
 -demographic information
 
@@ -125,27 +125,27 @@ Each patient is stored as an individual JSON file in the my_patients folder.
 
 This makes the application simple to run locally without a database.
 
-# Example workflow
+## Example workflow
 
--Open the application
+-**Open the application**
 
--Create a new patient
+-**Create a new patient**
 
--Enter:
+-**Enter:**
 
-sex
+-sex
 
-age
+-age
 
-height
+-height
 
-diagnosis
+-diagnosis
 
-sodium, glucose, urea, hematocrit
+-sodium, glucose, urea, hematocrit
 
-temperature and diuresis
+-temperature and diuresis
 
--Save the patient
+-**Save the patient**
 
 -Review or update the patient later
 
@@ -171,15 +171,15 @@ It reflects an attempt to translate ICU-style clinical reasoning into a small bu
 
 # Technologies used
 
-Python
+-**Python**
 
-CustomTkinter
+-**CustomTkinter**
 
-JSON
+-**JSON**
 
-Pathlib
+-**Pathlib**
 
-Object-oriented programming
+-**Object-oriented programming**
 
 # Limitations
 
@@ -191,21 +191,21 @@ The formulas and logic implemented here represent a simplified prototype and do 
 
 # Future improvements
 
-stronger field validation
+-**stronger field validation**
 
-dropdowns instead of free-text entries for some inputs
+-**dropdowns instead of free-text entries for some inputs**
 
-better error feedback inside the GUI
+-**better error feedback inside the GUI**
 
-trends and charts for repeated measurements
+-**trends and charts for repeated measurements**
 
-search and filtering by diagnosis or date
+-**search and filtering by diagnosis or date**
 
-export to CSV or PDF
+-**export to CSV or PDF**
 
-packaging as a standalone desktop app
+-**ackaging as a standalone desktop app**
 
-improved layout and UI styling
+-**improved layout and UI styling**
 
 # Screenshots
 
