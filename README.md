@@ -134,25 +134,25 @@ This makes the application simple to run locally without a database.
 
 - **Enter:**
 
-- sex
+  - sex
 
-- age
+  - age
 
-- height
+  - height
 
-- diagnosis
+  - diagnosis
 
-- sodium, glucose, urea, hematocrit
+  - sodium, glucose, urea, hematocrit
 
-- temperature and diuresis
+  - temperature and diuresis
 
 - **Save the patient**
 
-- Review or update the patient later
+  - Review or update the patient later
 
-- Recalculate values after new analysis input
+  - Recalculate values after new analysis input
 
-- Open and review saved history
+  - Open and review saved history
 
 # Why this project matters
 
